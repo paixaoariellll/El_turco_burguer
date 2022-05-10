@@ -32,12 +32,13 @@ header {
     padding: 40px 50px;
     z-index: 99;
 }
+header img{
+    max-width: 150px;
+}
 .logo {
     float: left;
-    max-height: 80px;
 }
 .menu {
-    display: flex;
     float: right;
 }
 .menu ul {
@@ -86,25 +87,28 @@ header {
 
 /* IMAGENS */
 .item-image {
-    float: left;
+    display: flex;
 }
 .item-image img {
     float: left;
     text-align: center;
+    position: absolute;
     display: flex;
     justify-content: center;
-    max-width: 40%;
+    top: 20%;
+    max-width: 1300px;
 }
 
-/* SLIDER CAPTION */
-.caption {
+/* SLIDER CAPTION 1*/
+.caption1 {
     color: #fff;
     float: left;
     padding: 230px 0;
-    position: relative;
+    position: absolute;
     z-index: 2;
+    right: 20%;
 }
-.caption::before {
+.caption1::before {
     content: attr(data-count);
     position: absolute;
     top: 0%;
@@ -114,14 +118,79 @@ header {
     font-weight: 300;
     opacity: .1;
 }
-.caption h1 {
+.caption1 h1 {
     font-weight: 400;
     font-size: 72px;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-shadow: 10px 15px 0 rgba( 0 0 0 /0.25);
 }
-.caption h4 {
+.caption1 h4 {
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    Letter-spacing: 5px;
+} 
+
+/* SLIDER CAPTION 2*/
+.caption2{
+    color: #fff;
+    float: left;
+    padding: 230px 0;
+    position: absolute;
+    z-index: 2;
+    right: 20%;
+}
+.caption1::before {
+    content: attr(data-count);
+    position: absolute;
+    top: 0%;
+    Left: 20%;
+    color: #fff;
+    font-size: 500px;
+    font-weight: 300;
+    opacity: .1;
+}
+.caption1 h1 {
+    font-weight: 400;
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 10px 15px 0 rgba( 0 0 0 /0.25);
+}
+.caption2 h4 {
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    Letter-spacing: 5px;
+} 
+/* SLIDER CAPTION 3*/
+.caption3 {
+    color: #fff;
+    float: left;
+    padding: 230px 0;
+    position: absolute;
+    z-index: 2;
+    right: 20%;
+}
+.caption3::before {
+    content: attr(data-count);
+    position: absolute;
+    top: 0%;
+    Left: 20%;
+    color: #fff;
+    font-size: 500px;
+    font-weight: 300;
+    opacity: .1;
+}
+.caption3 h1 {
+    font-weight: 400;
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 10px 15px 0 rgba( 0 0 0 /0.25);
+}
+.caption3 h4 {
     font-weight: 300;
     font-size: 30px;
     text-transform: uppercase;

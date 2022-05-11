@@ -78,7 +78,7 @@ header img{
 /* SLIDER */
 .slider .item {
     background-color: rgb(26, 1, 1);
-    height: 1100px;
+    height: 100vh;
 }
 .item {
     display: flex;
@@ -95,20 +95,39 @@ header img{
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 20%;
-    max-width: 1300px;
+    top: 15vh;
+    max-width: 1000px;
+}
+/* IMAGEM 1 */
+.item-image .img-1 {
+    top: 15%;
+    max-width: 800px;
+}
+/* IMAGEM 2 */
+.item-image .img-2 {
+    top: 10%;
+    max-width: 800px;
+    border-radius: 50%;
+    
+}
+/* IMAGEM 3 */
+.item-image .img-3 {
+    top: 15%;
+    max-width: 800px;
 }
 
+
+
 /* SLIDER CAPTION 1*/
-.caption1 {
+.caption-1 {
     color: #fff;
     float: left;
     padding: 230px 0;
-    position: absolute;
+    position: relative;
     z-index: 2;
-    right: 20%;
+    left: 60%;
 }
-.caption1::before {
+.caption-1::before {
     content: attr(data-count);
     position: absolute;
     top: 0%;
@@ -118,14 +137,14 @@ header img{
     font-weight: 300;
     opacity: .1;
 }
-.caption1 h1 {
+.caption-1 h1 {
     font-weight: 400;
     font-size: 72px;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-shadow: 10px 15px 0 rgba( 0 0 0 /0.25);
 }
-.caption1 h4 {
+.caption-1 h4 {
     font-weight: 300;
     font-size: 30px;
     text-transform: uppercase;
@@ -137,11 +156,11 @@ header img{
     color: #fff;
     float: left;
     padding: 230px 0;
-    position: absolute;
+    position: relative;
     z-index: 2;
-    right: 20%;
+    left: 60%;
 }
-.caption1::before {
+.caption2::before {
     content: attr(data-count);
     position: absolute;
     top: 0%;
@@ -151,27 +170,29 @@ header img{
     font-weight: 300;
     opacity: .1;
 }
-.caption1 h1 {
+.caption2 h1 {
     font-weight: 400;
     font-size: 72px;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-shadow: 10px 15px 0 rgba( 0 0 0 /0.25);
+    font-family: 'Courgette', cursive;
 }
 .caption2 h4 {
     font-weight: 300;
     font-size: 30px;
     text-transform: uppercase;
     Letter-spacing: 5px;
+    font-family: 'Courgette', cursive;
 } 
 /* SLIDER CAPTION 3*/
 .caption3 {
     color: #fff;
     float: left;
     padding: 230px 0;
-    position: absolute;
+    position: relative;
     z-index: 2;
-    right: 20%;
+    left: 60%;
 }
 .caption3::before {
     content: attr(data-count);

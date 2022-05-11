@@ -34,10 +34,11 @@
                     <li><a href="#">Contatos</a></li>
                     <li><a href="#">Sobre</a></li>
                 </ul>
-                <div class="troggleBtn">
+                <div class="toggleBtn toggleBtnActive">
                     <span></span>
                     <span></span>
                 </div>
+
             </div>
         </header>
 
@@ -49,7 +50,7 @@
                         <img class="img-1" src="restaurant/images/lanches/hambuguer-3.png" alt="">
                     </div>
                     <div class="caption-1" data-count="01">
-                        <h1>El turco burger</h1>
+                        <h1><span>El</span> <span>T</span>urco <span>B</span>urger</h1>
                         <h4>Teste de letras</h4>
                     </div>
                     <div class="slide-overlay"></div>
@@ -97,9 +98,15 @@
     <script src="bootstrap/dist/js/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
+        /* CAROUSEL DA LOADING-PAGE */
         $('.slider').slick({
             dots: true,
             horizontal: true
+        });
+        /* DROPDOWN ITENS DO MENU NA HEADER */
+        $(".toggleBtn").on('click', function () {
+            $(this).toggleClass("toggleBtnActive");
+            $(".menu ul").slideToggle();
         });
     </script>
     <script src="bootstrap/dist/js/main.js"></script>

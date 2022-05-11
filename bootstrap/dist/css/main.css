@@ -33,6 +33,10 @@ header {
 }
 header img{
     max-width: 150px;
+    transition: 1s ease-in-out;
+}
+header img:hover{
+    max-width: 300px;
 }
 .logo {
     float: left;
@@ -45,27 +49,43 @@ header img{
 }
 .menu ul li {
     display: inline-block;
+    background: url("../../../restaurant/images/lanches/hamburguer-letras-fechado-2.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15vh;
+    height: 75px;
+    z-index: 3;
+}
+.menu ul li:hover{
     background: url("../../../restaurant/images/lanches/hamburguer-letras.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 15vh;
-    height: 85px;
+    height: 88px;
+    transition: 1s ease-in-out;
 }
 .menu ul li a {
+    display: none;
+    transition: 1s ease-in-out;
+}
+.menu ul li:hover a{
     text-decoration: none;
     color: #ff8233;
     font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1.6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
     margin: 40px;
     border-radius: 30px;
-    display: flex;
     top: -5px;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 50%;
+    display: flex;
+    transition: 1s ease;
 }
 
 /* SLIDER */
@@ -94,8 +114,13 @@ header img{
 }
 /* IMAGEM 1 */
 .item-image .img-1 {
-    top: 15%;
-    max-width: 800px;
+    top: 25%;
+    max-width: 600px;
+    transition: 1s ease-in-out;
+}
+.item-image .img-1:hover{
+    top:  20%;
+    max-width: 1000px;
 }
 /* IMAGEM 2 */
 .item-image .img-2 {
@@ -290,7 +315,7 @@ header img{
 /* BOTTOM LINK */
 .bottom-link {
     width: 100%;
-    padding: 40px 30px;
+    padding: 20px 25px;
     background-color: rgba(0 0 0 / 0.3);
     position: absolute;
     z-index: 99;
@@ -336,9 +361,9 @@ header img{
     position: relative;
     top: 0;
     right: 15vh;
-    width: 42vh;
+    width: 50vh;
     height: 100vh;
-    background-color: #5e210c;
+    background: #5e210c 65%;
     z-index: 1;
 }
 .slider-wrap {
